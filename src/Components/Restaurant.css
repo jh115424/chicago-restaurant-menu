@@ -6,25 +6,22 @@
 
 .App {
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
+
   justify-content: center;
-  /* height: 100vh; */
-  background-color: #f5f5f5;
+
 }
 .card {
   display: flex;
   flex-direction: column;
   height: 100px;
-    width: 100px;
-
+  width: 100px;
 }
 
 .card-container {
   display: flex;
   margin-top: 100px;
 }
- .card-container {
+.card-container {
   display: flex;
   font-size: 12px;
   flex-wrap: wrap;
@@ -32,16 +29,15 @@
   row-gap: 40px;
   margin-top: 100px;
   text-align: justify;
-  justify-content: center; 
-  flex-direction: row; 
-} 
+  justify-content: center;
+  flex-direction: row;
+}
 
 .card-container > div {
-
   justify-content: center;
   margin-top: 100px;
   width: 200px;
-  height: 200px;
+  height: 340px;
   border-radius: 10px;
   background-color: #e6e0e0;
   box-shadow: 0 0 5px rgba(100, 78, 78, 0.2);
@@ -50,24 +46,25 @@
 .card-container > div > h3 {
   font-size: 14px;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 10px;
 }
 
- img {
+img {
   border-radius: 10px;
   background-color: #fbfbfb;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   height: 210px;
   display: flex;
   width: 200px;
-}  
+}
 
 .main-container {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background-color: rgb(216, 204, 204);
-} 
+  background-color: rgb(168, 158, 158);
+}
 
 .header-logo {
   display: flex;
@@ -79,26 +76,26 @@
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
- .restaurant-container {
+.restaurant-container {
   display: flex;
 }
 
 div .card-container {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
-  /* background-color: rgb(245, 245, 245); */
-  /* margin-left: 100px; */
 }
 
 .pictures {
   display: flex;
-} 
+}
 
- .image-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-} 
+
+.image-container {
+
+  display: grid;
+
+  grid-template-columns: 100px 150px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 300px;
+  row-gap: 350px;
+}

@@ -2,10 +2,11 @@ import React, { Component } from "react";
 
 import "./Components/Restaurant.css";
 import "./Components/Header.css";
+import Header from "./Components/Header.jsx";
 import Restaurant from "./Components/Restaurant";
 import { useState } from "react";
 const userUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=g";
-const userUrl2 = "https://www.themealdb.com/api/json/v1/1/search.php?f=m";
+// const userUrl2 = "https://www.themealdb.com/api/json/v1/1/search.php?f=m";
 
 class App extends Component {
   constructor(props) {
@@ -23,20 +24,20 @@ class App extends Component {
         }
         const data = await response.json();
         this.setState({ photos: data.meals });
-        return fetch(userUrl2);
+        // return fetch(userUrl2);
       })
 
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        this.setState((prevState) => ({
-          photos: [...prevState.photos, ...data.meals],
-        }));
-      })
+      // .then((response) => {
+      //   if (!response.ok) {
+      //     throw new Error("Network response was not ok");
+      //   }
+      //   return response.json();
+      // })
+      // .then((data) => {
+      //   this.setState((prevState) => ({
+      //     photos: [...prevState.photos, ...data.meals],
+      //   }));
+      // })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
@@ -60,8 +61,6 @@ class App extends Component {
           <div className="image-container">
             <Restaurant photos={this.state.photos} />
           </div>
-
-      
         </div>
       </>
     );
