@@ -1,3 +1,6 @@
+
+
+
 .header-logo {
   display: flex;
   height: 50px;
@@ -6,6 +9,7 @@
   border-radius: 50%;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+  
 }
 
 .main-container {
