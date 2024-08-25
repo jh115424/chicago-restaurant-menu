@@ -2,11 +2,10 @@ import React, { Component } from "react";
 
 import "./Components/Restaurant.css";
 import "./Components/Header.css";
-
+// import menuInfo from "./utils/menuInfo";
 import Restaurant from "./Components/Restaurant";
 import { useState } from "react";
-const userUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=g";
-
+const userUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=e";
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +23,6 @@ class App extends Component {
         }
         const data = await response.json();
         this.setState({ photos: data.meals });
-   
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -36,21 +34,24 @@ class App extends Component {
       <>
         <div className="main-container">
           <div className="title-container">
-            <h1 className="directory-name">LuxeVue Grill Chicago </h1>
+            <h1 className="directory-name">
+              LuxeVue Grill Chicago Kitchen Recipes{" "}
+            </h1>
 
             <img
               src="https://i.pinimg.com/originals/21/6e/41/216e415824c35e1c7eab0a9a2485604b.jpg"
               className="header-logo"
             />
+            <div className="co-title">
+              Rick and I bring to you our best recipes from our live downtown
+              Chicago cooking show right to your kitchen!
+            </div>
           </div>
         </div>
 
         <div className="App">
           <div className="image-container">
             <Restaurant photos={this.state.photos} />
-           
-        
-      
           </div>
         </div>
       </>
