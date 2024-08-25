@@ -1,21 +1,16 @@
 #root {
   margin: 0 auto;
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F08%2FPhotography-Kebab-Meat-Food-Wallpaper-HD-Desktop-Computer.jpg&f=1&nofb=1&ipt=07f3baf35ac3e0c9434e2c7d4c8227d6a2a6a632216d1e4df7cae25269690826&ipo=images");
-  background-size: 1000px 400px;
+  background-size: 1300px 400px;
   background-repeat: no-repeat;
   background-position: top;
-  
+
   text-align: center;
 
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
-.App {
-  display: flex;
-
-  justify-content: center;
-}
 .card {
   display: flex;
   flex-direction: column;
@@ -24,16 +19,8 @@
 }
 
 .card-container {
-  display: flex;
-  margin-top: 100px;
-}
-.card-container {
-  display: flex;
   font-size: 12px;
   flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 40px;
-  margin-top: 100px;
   text-align: justify;
   justify-content: center;
   flex-direction: row;
@@ -43,7 +30,7 @@
   justify-content: center;
   margin-top: 100px;
   width: 200px;
-  height: 340px;
+  height: 390px;
   border-radius: 10px;
   background-color: #e6e0e0;
   box-shadow: 0 0 5px rgba(100, 78, 78, 0.2);
@@ -86,30 +73,14 @@ img {
   display: flex;
 }
 
-div .card-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.pictures {
-  display: flex;
-}
-
 .image-container {
   display: grid;
-  /* display: flex;
-  
-  flex-direction: column; */
-  /* justify-content: center; */
-  margin-top: 200px;
-   grid-template-columns: 100px 150px 100px;
-  grid-template-rows: 80px auto 80px; 
-   column-gap: 300px;
-  row-gap: 350px; 
+  grid-template-columns: auto auto auto;
+  margin-top: 300px;
+  column-gap: 75px;
+  justify-content: center;
 }
 
 summary {
   text-align: center;
-
-  
 }

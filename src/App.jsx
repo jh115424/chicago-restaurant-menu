@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-
+import Footer from "./Components/Footer";
 import "./Components/Restaurant.css";
 import "./Components/Header.css";
-// import menuInfo from "./utils/menuInfo";
+import "./Components/Footer.css";
+import Header from "./Components/Header";
 import Restaurant from "./Components/Restaurant";
 import { useState } from "react";
+
+
+
 const userUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=e";
 
 class App extends Component {
@@ -12,6 +16,7 @@ class App extends Component {
     super();
     this.state = {
       photos: [],
+      menuInfo: [],
     };
   }
 
@@ -34,17 +39,18 @@ class App extends Component {
       <>
         <div className="main-container">
           <div className="title-container">
-            <h1 className="directory-name">
-              LuxeVue Grill Chicago Kitchen Recipes{" "}
-            </h1>
+            <h1 className="directory-name">LuxeVue Grill Chicago </h1>
 
             <img
               src="https://i.pinimg.com/originals/21/6e/41/216e415824c35e1c7eab0a9a2485604b.jpg"
               className="header-logo"
             />
             <div className="co-title">
-              Rick and I bring to you our best recipes from our live downtown
-              Chicago cooking show right to your kitchen!
+              Phone: (312) 226-7777 <br></br>
+              Address: 100 E. Rush Ave, Chicago, IL 60654<br></br>
+              Hours: Monday - Friday: 11:00am - 10:00pm <br></br>
+              Saturday: 11:00am - 12:00pm <br></br>
+              Sunday: 12:00pm - 4:00pm <br></br>
             </div>
           </div>
         </div>
@@ -54,6 +60,7 @@ class App extends Component {
             <Restaurant photos={this.state.photos} />
           </div>
         </div>
+        <Footer />
       </>
     );
   }

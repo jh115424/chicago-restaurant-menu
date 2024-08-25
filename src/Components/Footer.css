@@ -1,0 +1,36 @@
+.footer-container {
+    display: flex;
+    background-color: #ffc107bd;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 130px;
+    align-items: baseline;
+  }
+
+  .contact-info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    list-style: none;
+    margin-right: 10px;
+
+  }
+
+  .social-media{
+    height: 20px;
+    width: 20px;
+  }
+
+  .stay-in-touch {
+    font-size: 14px;
+  }
+
+  .credit-card-info {
+    margin-left: 10px;
+  }
