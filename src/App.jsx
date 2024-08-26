@@ -7,6 +7,21 @@ import Header from "./Components/Header";
 import Restaurant from "./Components/Restaurant";
 import { useState } from "react";
 
+// const isMobileDevice = useMediaQuery({
+//   query: "(min-device-width: 480px)",
+// });
+
+// const isTabletDevice = useMediaQuery({
+//   query: "(min-device-width: 768px)",
+// });
+
+// const isLaptop = useMediaQuery({
+//   query: "(min-device-width: 1024px)",
+// });
+
+// const isDesktop = useMediaQuery({
+//   query: "(min-device-width: 1200px)",
+// });
 
 
 const userUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=e";
